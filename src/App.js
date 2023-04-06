@@ -1,13 +1,14 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import Hello from './hello';
+// import Hello from './hello';
 import Form from './form';
 import Map from './map';
-import State from './state/parent';
+// import State from './state/parent';
 import Nav from './pageRouter/nav';
 import Nav1 from './pageRouter/nav1';
+import TodoList from './pageRouter/todoList';
 
-import Query from './pageRouter/query';
+// import Query from './pageRouter/query';
 // let a=1;
 // const element = <h1>app {a+1} </h1>;
 
@@ -43,6 +44,7 @@ export default class App extends React.Component {
             {/* Switch  只加载一个页面  */}
             <Switch>
               <Route exact path='/' component={Form} />
+              <Route  exact path='/todoList' component={TodoList}></Route>
               {/* <Route exact path='/hello' component={Hello} /> */}
               {/* <Route path='/Map' component={Map} /> */}
               {/* react-router render 函数，简单页面 */}
